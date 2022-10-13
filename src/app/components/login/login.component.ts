@@ -21,7 +21,32 @@ export class LoginComponent implements OnInit {
   }
 
   logIn(){
-    this.router.navigate(['home']);
+    const usr =(<HTMLInputElement>document.getElementById("user")).value;
+    const pass=(<HTMLInputElement>document.getElementById("password")).value;
+    if(usr !== "" && pass !==""){
+      fetch('cambiar por url', {
+        method: 'POST', 
+        body: JSON.stringify({
+          'username': usr,
+          'password': pass
+        }), 
+        headers:{
+        'Content-Type': 'application/json'
+        }
+      })
+      .then(response =>response.text())
+      .then(data =>{
+          if(data==""){
+              this.router.navigate(['home']);
+          }else{
+              alert("Acceso denegado");
+          }
+      });
+      
+    }else{
+      alert("Complete ambos campos por favor");
+    }
+    
   }
 
 }
