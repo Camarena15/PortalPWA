@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Users\\Camita\\Documentos\\Visual Studio Repos\\webapiservice\\webapiservice\\webapiservice\\webapiservice.csproj": {}
+    "E:\\Users\\Camita\\Documentos\\Visual Studio Repos\\PortalPWA\\webapiservice\\webapiservice\\webapiservice.csproj": {}
   },
   "projects": {
-    "E:\\Users\\Camita\\Documentos\\Visual Studio Repos\\webapiservice\\webapiservice\\webapiservice\\webapiservice.csproj": {
+    "E:\\Users\\Camita\\Documentos\\Visual Studio Repos\\PortalPWA\\webapiservice\\webapiservice\\webapiservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Users\\Camita\\Documentos\\Visual Studio Repos\\webapiservice\\webapiservice\\webapiservice\\webapiservice.csproj",
+        "projectUniqueName": "E:\\Users\\Camita\\Documentos\\Visual Studio Repos\\PortalPWA\\webapiservice\\webapiservice\\webapiservice.csproj",
         "projectName": "webapiservice",
-        "projectPath": "E:\\Users\\Camita\\Documentos\\Visual Studio Repos\\webapiservice\\webapiservice\\webapiservice\\webapiservice.csproj",
+        "projectPath": "E:\\Users\\Camita\\Documentos\\Visual Studio Repos\\PortalPWA\\webapiservice\\webapiservice\\webapiservice.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Users\\Camita\\Documentos\\Visual Studio Repos\\webapiservice\\webapiservice\\webapiservice\\obj\\",
+        "outputPath": "E:\\Users\\Camita\\Documentos\\Visual Studio Repos\\PortalPWA\\webapiservice\\webapiservice\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files\\Dev Tools\\Visual Studio\\Shared\\NuGetPackages",

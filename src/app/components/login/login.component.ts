@@ -23,20 +23,28 @@ export class LoginComponent implements OnInit {
   logIn(){
     const usr =(<HTMLInputElement>document.getElementById("user")).value;
     const pass=(<HTMLInputElement>document.getElementById("password")).value;
+    /*const d = document.getElementById('formulario');
+    const data = new FormData(<HTMLFormElement>d);
+    fetch('../post.php', {
+      method: 'POST',
+      body: data
+    })*/
+
     if(usr !== "" && pass !==""){
-      fetch('cambiar por url', {
+      fetch('http://localhost:3000/user/singin', {
         method: 'POST', 
         body: JSON.stringify({
-          'username': usr,
-          'password': pass
+          'user': usr,
+          'pass': pass
         }), 
         headers:{
         'Content-Type': 'application/json'
         }
       })
-      .then(response =>response.text())
+      .then(response =>response.json())
       .then(data =>{
-          if(data==""){
+          debugger;
+          if(data=="ok"){
               this.router.navigate(['home']);
           }else{
               alert("Acceso denegado");
