@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -41,12 +42,22 @@ export class LoginComponent implements OnInit {
           if(data=="ok"){
               this.router.navigate(['home']);
           }else{
-              alert("Acceso denegado");
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Usuario o Contraseña incorrectos!',
+              confirmButtonColor: '#00c4a7'
+            })
           }
       });
       
     }else{
-      alert("Complete ambos campos por favor");
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Por favor, complete ambos campos',
+        confirmButtonColor: '#00c4a7'
+      })
     }
     
   }
