@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import Swal from 'sweetalert2';
 
 @Component({
@@ -8,11 +9,6 @@ import Swal from 'sweetalert2';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  user = {
-    userName: 'kevin',
-    pass: '123'
-  }
 
   constructor(
     private router: Router
@@ -38,8 +34,8 @@ export class LoginComponent implements OnInit {
       })
       .then(response =>response.json())
       .then(data =>{
-          debugger;
-          if(data=="ok"){
+          if(data!="Invalid"){
+              localStorage.setItem('token',data);
               this.router.navigate(['home']);
           }else{
             Swal.fire({

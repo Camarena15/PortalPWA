@@ -7,12 +7,25 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { DeliveryNoteCreationComponent } from './components/delivery-note-creation/delivery-note-creation.component';
+import { MeasuringEquipmentInstallationComponent } from './components/measuring-equipment-installation/measuring-equipment-installation.component';
+import { TestEquipmentMonitoringComponent } from './components/test-equipment-monitoring/test-equipment-monitoring.component';
+import { CalibrationCertificateDownloadComponent } from './components/calibration-certificate-download/calibration-certificate-download.component';
+import { CalibrationCertificateHistoryComponent } from './components/calibration-certificate-history/calibration-certificate-history.component';
+
+//Modules
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    DeliveryNoteCreationComponent,
+    MeasuringEquipmentInstallationComponent,
+    TestEquipmentMonitoringComponent,
+    CalibrationCertificateDownloadComponent,
+    CalibrationCertificateHistoryComponent
   ],
   imports: [
     BrowserModule,
