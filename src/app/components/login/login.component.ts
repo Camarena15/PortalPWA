@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { JwtConfig, JwtHelperService } from '@auth0/angular-jwt';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -11,10 +11,13 @@ import Swal from 'sweetalert2';
 export class LoginComponent implements OnInit {
 
   constructor(
+    private JwtHelper: JwtHelperService,
     private router: Router
   ) { }
 
   ngOnInit() {
+    const token = localStorage.getItem('token')
+    
   }
 
   logIn(){
