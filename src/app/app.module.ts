@@ -13,7 +13,9 @@ import { TestEquipmentMonitoringComponent } from './components/test-equipment-mo
 import { CalibrationCertificateDownloadComponent } from './components/calibration-certificate-download/calibration-certificate-download.component';
 import { CalibrationCertificateHistoryComponent } from './components/calibration-certificate-history/calibration-certificate-history.component';
 
-//Modules
+
+//Providers
+import {JwtHelperService, JWT_OPTIONS} from '@auth0/angular-jwt';
 
 
 @NgModule({
@@ -37,7 +39,10 @@ import { CalibrationCertificateHistoryComponent } from './components/calibration
       registrationStrategy: 'registerWhenStable:30000'
     })
   ],
-  providers: [],
+  providers: [
+    {provide: JWT_OPTIONS, useValue: JWT_OPTIONS},
+    JwtHelperService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
