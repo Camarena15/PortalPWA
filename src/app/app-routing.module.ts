@@ -11,7 +11,7 @@ import { TestEquipmentMonitoringComponent } from './components/test-equipment-mo
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent , canActivate: [AuthGuard] },
+  { path: 'login', component: LoginComponent , },
   { path: 'home', component: HomeComponent , canActivate: [AuthGuard] },
   { path: 'certificate-download', component: CalibrationCertificateDownloadComponent , canActivate: [AuthGuard] },
   { path: 'certificate-history', component: CalibrationCertificateHistoryComponent , canActivate: [AuthGuard] },
