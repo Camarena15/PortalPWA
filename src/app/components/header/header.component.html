@@ -49,9 +49,9 @@
         </div>
     </nav>
     <!-- END NAV -->
-    <div class="container">
-        <div class="columns">
-            <div class="column is-3 ">
+    <div class="container" style="margin: 0 0 0 5px; position: relative">
+        <div class="columns" style="width: 100vw">
+            <div class="column is-3" style="margin:0 0 0 10px">
                 <div class="menu-label control has-icons-left is-hidden-tablet" (click)="viewMenu()">
                     <label class="input">Options</label>
                     <span small class="icon is-small is-left">
@@ -64,11 +64,11 @@
                         Menu
                     </p>
                     <ul class="menu-list">
-                        <li><a class="is-active" routerLink="../delivery-note" routerLinkActive="active" >Delivery note creation</a></li>
-                        <li><a class="is-active" routerLink="../certificate-download" routerLinkActive="active">Calibration certificate download</a></li>
-                        <li><a class="is-active" routerLink="../equipment-installation" routerLinkActive="active">Installation of measuring equipment</a></li>
-                        <li><a class="is-active" routerLink="../certificate-history" routerLinkActive="active">Calibration certificate history (10 years)</a></li>
-                        <li><a class="is-active" routerLink="../test-equipment" routerLinkActive="active">Test equipment monitoring</a></li>
+                        <li><a [class.active]="activeStyleItem(true)" routerLink="../delivery-note" routerLinkActive="is-active" >Delivery note creation</a></li>
+                        <li><a [class.active]="activeStyleItem(true)" routerLink="../certificate-download" routerLinkActive="is-active">Calibration certificate download</a></li>
+                        <li><a [class.active]="activeStyleItem(true)" routerLink="../equipment-installation" routerLinkActive="is-active">Installation of measuring equipment</a></li>
+                        <li><a [class.active]="activeStyleItem(true)" routerLink="../certificate-history" routerLinkActive="is-active">Calibration certificate history (10 years)</a></li>
+                        <li><a [class.active]="activeStyleItem(true)" routerLink="../test-equipment" routerLinkActive="is-active">Test equipment monitoring</a></li>
                     </ul>
                     <p class="menu-label">
                         Administration
