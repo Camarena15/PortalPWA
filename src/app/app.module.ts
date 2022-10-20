@@ -16,7 +16,8 @@ import { CalibrationCertificateHistoryComponent } from './components/calibration
 
 //Providers
 import {JwtHelperService, JWT_OPTIONS} from '@auth0/angular-jwt';
-import { DeshboardComponent } from './components/deshboard/deshboard.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { DeshboardComponent } from './components/deshboard/deshboard.component';
     TestEquipmentMonitoringComponent,
     CalibrationCertificateDownloadComponent,
     CalibrationCertificateHistoryComponent,
-    DeshboardComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

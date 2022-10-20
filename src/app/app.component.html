@@ -1,3 +1,5 @@
 <div>
-  <router-outlet></router-outlet>
+<app-header *ngIf="!router.url.match('login')"></app-header>
+<router-outlet *ngIf="router.url.match('login')"></router-outlet>
+<app-footer *ngIf="!router.url.match('login')"></app-footer>
 </div>
