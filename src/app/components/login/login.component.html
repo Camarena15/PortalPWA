@@ -7,11 +7,11 @@
                     <img src="https://www.metas.com.mx/img/MetAs_Logo_Header.png" alt="Logo" style="margin-left: 25%;">
                     <hr/>
                     <label htmlFor="user">Usuario</label>
-                    <input class="input is-primary" type="text" placeholder="Usuario" id="user"/>
+                    <input class="input is-primary" type="text" placeholder="Usuario" id="user" (keypress)="enterLogin($event)"/>
                 </div>
                 <div class="column">
                     <label htmlFor="Name">Contraseña</label>
-                    <input class="input is-primary" type="password" placeholder="Contraseña" id="password"/>
+                    <input class="input is-primary" type="password" placeholder="Contraseña" id="password" (keypress)="enterLogin($event)"/>
                     <a href="/" class="is-size-7 has-text-primary">Olvide mi contraseña</a>
                 </div>
                 <div class="column">
