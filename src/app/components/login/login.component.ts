@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
     const pass=(<HTMLInputElement>document.getElementById("password")).value;
     
     if(usr !== "" && pass !==""){
-      fetch('http://localhost:3000/user/singin', {
+      fetch('http://localhost:3001/user/singin', {
         method: 'POST', 
         body: JSON.stringify({
           'user': usr,
